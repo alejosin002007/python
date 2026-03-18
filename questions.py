@@ -14,7 +14,7 @@ llave = input("Eligir una categoria: ")
 print()
 res = diccionario.get(llave,"incorrecto")
 if res!="incorrecto":
-    word = random.choice(res)
+    word = random.sample(res,1)[0]#EL [0] SE PONE PARA QUE A WORD NO LE DE UNA LISTA DE UNA SOLA PALABRA/ELEMENTO, SINO QUE LE DE EL ELEMENTO EN SI, EL STRING. YA QUE SI NO DETECTARA A LA LISTA COMO SOLO UN ELEMENTO.
     while attempts > 0:
         # Mostrar progreso: letras adivinadas y guiones para las que faltan
         progress = ""
