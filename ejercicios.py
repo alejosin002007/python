@@ -8,11 +8,11 @@
 # 2. Escribe un programa que solicite al usuario una cantidad de segundos y muestre
 # cuántas horas, minutos y segundos equivalen. Por ejemplo, 3661 segundos son 1
 # hora, 1 minuto y 1 segundo.
-# seg = int(input("Ingrese segundos"))
-# hora = seg // 3600
-# minu = seg % 3600 // 60
-# seg = (seg // 3600) % 60 
-# print("horas",hora," minutos ",minu," segundos ",seg)
+seg = int(input("Ingrese segundos"))
+hora = seg // 3600
+minu = seg % 3600 // 60
+seg = seg % 60 
+print("horas",hora," minutos ",minu," segundos ",seg)
 # 
 # 3. Crea un programa que solicite al usuario un número y muestre su tabla de multiplicar
 # del 1 al 10 utilizando un bucle for.
@@ -24,21 +24,23 @@
 # números del 1 al N pero saltee los múltiplos de 5. Nota: utilizá la sentencia continue
 # Entrega donde haga falta.
 # num = int(input("ingrese numero: "))
-# for i in range(1,num):
+#for i in range(1,num+1):
 #     if(i % 5 == 0):
 #         continue
 #     else:
 #         print(i)
 # 
 # 5. Escribe un programa que simule una caja registradora: el usuario ingresa precios de
-# productos de a uno. Cuando ingresa 0, el programa se detiene y muestra el total
+#  productos de a uno. Cuando ingresa 0, el programa se detiene y muestra el total
 # acumulado. Nota: utilizá la sentencia break cuando haga falta.
-# precio = float(input("ingrese precio del producto: "))
-# total = 0.0
-# while precio!=0:
-#     total= total + precio
-#     precio = float(input("ingrese precio del producto: "))
-# print("el total acumulado es: ", total)    
+#precio = float(input("ingrese precio del producto: "))
+#total = 0.0
+#while True:
+#    if precio==0:
+#        break
+#    total= total + precio
+#    precio = float(input("ingrese precio del producto: "))
+#print("el total acumulado es: ", total)    
 # 
 # 
 # 6. Modifica el ejercicio 4 para que, en lugar de imprimir los números, genere dos listas:
