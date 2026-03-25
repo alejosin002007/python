@@ -49,11 +49,12 @@ while(True):
             while(bool):
                 equipo = input("Escribir nombre de equipo a agregar: ")
                 lista5 = tabla.keys()
-                for elem in lista5:
-                    if elem==equipo:
-                        print("Equipo ya existente")
-            bool=False
-            tabla[equipo] = 0
+                if not equipo in lista5:
+                    bool=False
+                    tabla[equipo] = 0
+                else:
+                    print("Equipo ya existente")
+                    continue
         case 2:
             bool = True
             while(bool):
